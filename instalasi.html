@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Modern</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Custom CSS untuk animasi dan styling lebih menarik */
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      .navbar {
+        background-color: rgba(0, 123, 255, 0.9);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        padding: 0.75rem 1rem;
+        color: white !important;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ffd700 !important; /* Warna kuning saat hover */
+      }
+
+      .hero {
+        background: url("https://via.placeholder.com/1920x600") center center /
+          cover no-repeat;
+        color: white;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 123, 255, 0.6);
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        z-index: 1;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        z-index: 1;
+      }
+
+      .hero a {
+        padding: 0.75rem 2rem;
+        font-size: 1.2rem;
+        z-index: 1;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero a:hover {
+        background-color: #ffd700;
+        color: #000;
+      }
+
+      .section-title {
+        margin-bottom: 4rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #007bff;
+        text-align: center;
+      }
+
+      .features .feature {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .features .feature:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonials .card {
+        border: none;
+        transition: transform 0.3s ease;
+      }
+
+      .testimonials .card:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 2rem 0;
+      }
+
+      footer a {
+        color: #fff;
+      }
+
+      footer a:hover {
+        color: #ffd700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container text-center">
+        <h1>Solusi Bisnis Masa Depan</h1>
+        <p>Inovasi untuk pertumbuhan dan kesuksesan Anda</p>
+        <a href="#" class="btn btn-light btn-lg">Mulai Sekarang</a>
+      </div>
+    </header>
+
+    <!-- Fitur Produk -->
+    <section id="features" class="py-5 features">
+      <div class="container">
+        <h2 class="section-title">Fitur Unggulan Kami</h2>
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <div class="p-4 feature">
+              <img
+                src="https://via.placeholder.com/100"
+                class="rounded-circle mb-3"
+                alt="Fitur 1"
+              />
+              <h4>Fitur 1</h4>
+              <p>
+                Meningkatkan efisiensi dengan alat yang mudah digunakan dan
+                efektif.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="p-4 feature">
+              <img
+                src="https://via.placeholder.com/100"
+                class="rounded-circle mb-3"
+                alt="Fitur 2"
+              />
+              <h4>Fitur 2</h4>
+              <p>
+                Mempercepat proses kerja Anda dengan teknologi terdepan di
+                industri.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="p-4 feature">
+              <img
+                src="https://via.placeholder.com/100"
+                class="rounded-circle mb-3"
+                alt="Fitur 3"
+              />
+              <h4>Fitur 3</h4>
+              <p>
+                Meningkatkan keamanan dan kenyamanan dalam penggunaan produk
+                kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="bg-light py-5 testimonials">
+      <div class="container">
+        <h2 class="section-title">Apa Kata Pengguna Kami?</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">
+                  "Produk ini mengubah cara kami menjalankan bisnis dengan hasil
+                  yang luar biasa."
+                </p>
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-subtitle text-muted">CEO, Company ABC</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">
+                  "Layanan yang diberikan luar biasa, saya sangat
+                  merekomendasikan produk ini."
+                </p>
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-subtitle text-muted">Founder, Startup XYZ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <p class="card-text">
+                  "Keamanan dan keandalan adalah prioritas utama, dan produk ini
+                  memberikan itu."
+                </p>
+                <h5 class="card-title">David Johnson</h5>
+                <p class="card-subtitle text-muted">Manager, Tech Corp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+      <div class="container">
+        <p>&copy; 2024 Brand. All rights reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Link ke Bootstrap JS dan Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

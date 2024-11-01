@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Kompleks</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!-- Script untuk fungsi dropdown -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#">BrandLogo</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Layanan <i class="arrow down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Layanan 1</a>
+              <a href="#">Layanan 2</a>
+              <a href="#">Layanan 3</a>
+            </div>
+          </li>
+          <li><a href="#">Portofolio</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+        <div class="nav-search">
+          <input type="text" placeholder="Cari..." />
+          <button>Cari</button>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <script>
+      // Untuk toggle navbar saat mode mobile
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

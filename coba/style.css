@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  color: #707070;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div img {
+  width: 40px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #707070;
+  margin-left: 0.5rem; /* Jarak antara logo dan teks */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
